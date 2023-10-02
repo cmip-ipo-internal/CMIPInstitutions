@@ -1,0 +1,479 @@
+{
+    "000jewp25": {
+        "CMIP6key": null
+    },
+    "001n36p86": {
+        "CMIP6key": null
+    },
+    "004rej139": {
+        "CMIP6key": null
+    },
+    "00520ey40": {
+        "CMIP6key": "INM"
+    },
+    "008xxew50": {
+        "CMIP6key": null
+    },
+    "009gyvm78": {
+        "CMIP6key": null
+    },
+    "00g30e956": {
+        "CMIP6key": "UHH"
+    },
+    "00hgzve81": {
+        "CMIP6key": null
+    },
+    "00jmfr291": {
+        "CMIP6key": null
+    },
+    "00n8ttd98": {
+        "CMIP6key": null
+    },
+    "00q7d9z06": {
+        "CMIP6key": null
+    },
+    "00rbjv475": {
+        "CMIP6key": null
+    },
+    "00vhgwv19": {
+        "CMIP6key": null
+    },
+    "012a77v79": {
+        "CMIP6key": null
+    },
+    "014w0fd65": {
+        "CMIP6key": "ECMWF"
+    },
+    "016tr2j79": {
+        "CMIP6key": null
+    },
+    "0171mag52": {
+        "CMIP6key": "NASA-GSFC"
+    },
+    "01apwpt12": {
+        "CMIP6key": null
+    },
+    "01ch2yn61": {
+        "CMIP6key": "MOHC"
+    },
+    "01cyfxe35": {
+        "CMIP6key": "NASA-GISS"
+    },
+    "01e41cf67": {
+        "CMIP6key": null
+    },
+    "01gw5dy53": {
+        "CMIP6key": null
+    },
+    "01k0v6g02": {
+        "CMIP6key": null
+    },
+    "01qz5mb56": {
+        "CMIP6key": null
+    },
+    "01rxvg760": {
+        "CMIP6key": "NUIST"
+    },
+    "01sp7nd78": {
+        "CMIP6key": null
+    },
+    "01tf11a61": {
+        "CMIP6key": "CMCC"
+    },
+    "01xtthb56": {
+        "CMIP6key": null
+    },
+    "01y34t753": {
+        "CMIP6key": null
+    },
+    "020m6x732": {
+        "CMIP6key": null
+    },
+    "026ny0e17": {
+        "CMIP6key": "CCCma"
+    },
+    "026sv7t11": {
+        "CMIP6key": null
+    },
+    "0272j5188": {
+        "CMIP6key": null
+    },
+    "02b5d8509": {
+        "CMIP6key": "NERC"
+    },
+    "02dzbc556": {
+        "CMIP6key": null
+    },
+    "02ex6cf31": {
+        "CMIP6key": null
+    },
+    "02haar591": {
+        "CMIP6key": "IPSL"
+    },
+    "02hw5fp67": {
+        "CMIP6key": null
+    },
+    "02jbv0t02": {
+        "CMIP6key": null
+    },
+    "02khqd465": {
+        "CMIP6key": null
+    },
+    "02nrqs528": {
+        "CMIP6key": "DWD"
+    },
+    "02nv7yv05": {
+        "CMIP6key": null
+    },
+    "02t274463": {
+        "CMIP6key": "UCSB"
+    },
+    "02ttsq026": {
+        "CMIP6key": null
+    },
+    "02z5nhe81": {
+        "CMIP6key": null
+    },
+    "030eybx10": {
+        "CMIP6key": null
+    },
+    "032e6b942": {
+        "CMIP6key": "AWI"
+    },
+    "032m55064": {
+        "CMIP6key": "KIOST"
+    },
+    "034b53w38": {
+        "CMIP6key": "CAMS"
+    },
+    "034t30j35": {
+        "CMIP6key": "CAS"
+    },
+    "035b05819": {
+        "CMIP6key": null
+    },
+    "03a5xsc56": {
+        "CMIP6key": null
+    },
+    "03cve4549": {
+        "CMIP6key": "THU"
+    },
+    "03e21z229": {
+        "CMIP6key": null
+    },
+    "03jf2m686": {
+        "CMIP6key": "CCCR-IITM"
+    },
+    "03m2x1q45": {
+        "CMIP6key": "UA"
+    },
+    "03qeabs35": {
+        "CMIP6key": null
+    },
+    "03qn8fb07": {
+        "CMIP6key": "CSIRO"
+    },
+    "03r519674": {
+        "CMIP6key": null
+    },
+    "03vmn1898": {
+        "CMIP6key": null
+    },
+    "03zga2b32": {
+        "CMIP6key": null
+    },
+    "03ztgj037": {
+        "CMIP6key": "DKRZ"
+    },
+    "040af2s02": {
+        "CMIP6key": null
+    },
+    "041nk4h53": {
+        "CMIP6key": "LLNL"
+    },
+    "046ggxs83": {
+        "CMIP6key": null
+    },
+    "048a87296": {
+        "CMIP6key": null
+    },
+    "04bwf3e34": {
+        "CMIP6key": null
+    },
+    "04cg70g73": {
+        "CMIP6key": "AER"
+    },
+    "04fzjj956": {
+        "CMIP6key": null
+    },
+    "04gyf1771": {
+        "CMIP6key": "UCI"
+    },
+    "04h9pn542": {
+        "CMIP6key": "SNU"
+    },
+    "04hxcaz34": {
+        "CMIP6key": "NIWA"
+    },
+    "04kxf1r09": {
+        "CMIP6key": null
+    },
+    "04m2hj141": {
+        "CMIP6key": null
+    },
+    "04nrmrg07": {
+        "CMIP6key": null
+    },
+    "04pp8hn57": {
+        "CMIP6key": null
+    },
+    "04qw24q55": {
+        "CMIP6key": null
+    },
+    "04t3en479": {
+        "CMIP6key": null
+    },
+    "04te6a418": {
+        "CMIP6key": null
+    },
+    "04xx4z452": {
+        "CMIP6key": null
+    },
+    "050qpg053": {
+        "CMIP6key": "AS-RCEC"
+    },
+    "052gg0110": {
+        "CMIP6key": null
+    },
+    "05558nw16": {
+        "CMIP6key": null
+    },
+    "057zh3y96": {
+        "CMIP6key": null
+    },
+    "058m7ey48": {
+        "CMIP6key": null
+    },
+    "059qg2m13": {
+        "CMIP6key": null
+    },
+    "05a28rw58": {
+        "CMIP6key": null
+    },
+    "05bqach95": {
+        "CMIP6key": "NTU"
+    },
+    "05cvfcr44": {
+        "CMIP6key": "NCAR"
+    },
+    "05dfgh554": {
+        "CMIP6key": null
+    },
+    "05esem239": {
+        "CMIP6key": "MPI-M"
+    },
+    "05f0yaq80": {
+        "CMIP6key": null
+    },
+    "05gvnxz63": {
+        "CMIP6key": null
+    },
+    "05h992307": {
+        "CMIP6key": "PNNL-WACCEM"
+    },
+    "05hppb561": {
+        "CMIP6key": null
+    },
+    "05m7pjf47": {
+        "CMIP6key": null
+    },
+    "05sd8tv96": {
+        "CMIP6key": null
+    },
+    "BCC": {
+        "CMIP6key": "BCC"
+    },
+    "COSIMA": {
+        "CMIP6key": null
+    },
+    "IMAU(NETHERLANDS)": {
+        "CMIP6key": null
+    },
+    "MRI(Tsukuba,Ibaraki)": {
+        "CMIP6key": "MRI"
+    },
+    "NERSC(Bergen)": {
+        "CMIP6key": null
+    },
+    "PCMDI": {
+        "CMIP6key": null
+    },
+    "Unite_ASTR(Belgium)": {
+        "CMIP6key": null
+    },
+    "Group:CNRM-CERFACS": {
+        "contains": [
+            "004rej139",
+            "02dzbc556"
+        ],
+        "CMIP6key": "CNRM-CERFACS"
+    },
+    "Group:CSIRO-ARCCSS": {
+        "contains": [
+            "02dzbc556",
+            "03qn8fb07"
+        ],
+        "CMIP6key": "CSIRO-ARCCSS"
+    },
+    "Group:CSIRO-COSIMA": {
+        "contains": [
+            "03qn8fb07",
+            "COSIMA"
+        ],
+        "CMIP6key": "CSIRO-COSIMA"
+    },
+    "Group:E3SM-Project": {
+        "contains": [
+            "01apwpt12",
+            "01e41cf67",
+            "01qz5mb56",
+            "02ex6cf31",
+            "02jbv0t02",
+            "041nk4h53",
+            "058m7ey48",
+            "05gvnxz63",
+            "05h992307"
+        ],
+        "CMIP6key": "E3SM-Project"
+    },
+    "Group:EC-Earth-Consortium": {
+        "contains": [
+            "000jewp25",
+            "008xxew50",
+            "009gyvm78",
+            "00hgzve81",
+            "00n8ttd98",
+            "00rbjv475",
+            "00vhgwv19",
+            "012a77v79",
+            "01k0v6g02",
+            "01sp7nd78",
+            "020m6x732",
+            "02khqd465",
+            "030eybx10",
+            "035b05819",
+            "03zga2b32",
+            "040af2s02",
+            "046ggxs83",
+            "048a87296",
+            "04fzjj956",
+            "04kxf1r09",
+            "04pp8hn57",
+            "04qw24q55",
+            "04t3en479",
+            "04te6a418",
+            "052gg0110",
+            "05dfgh554",
+            "05f0yaq80",
+            "05hppb561",
+            "05m7pjf47",
+            "05sd8tv96",
+            "IMAU(NETHERLANDS)",
+            "Unite_ASTR(Belgium)"
+        ],
+        "CMIP6key": "EC-Earth-Consortium"
+    },
+    "Group:FIO-QLNM": {
+        "contains": [
+            "01y34t753",
+            "026sv7t11"
+        ],
+        "CMIP6key": "FIO-QLNM"
+    },
+    "Group:HAMMOZ-Consortium": {
+        "contains": [
+            "02nv7yv05",
+            "03a5xsc56",
+            "052gg0110",
+            "05a28rw58",
+            "05a28rw58",
+            "05esem239",
+            "05hppb561"
+        ],
+        "CMIP6key": "HAMMOZ-Consortium"
+    },
+    "Group:MESSy-Consortium": {
+        "contains": [
+            "02hw5fp67",
+            "03e21z229",
+            "03ztgj037",
+            "04bwf3e34",
+            "04xx4z452",
+            "05558nw16"
+        ],
+        "CMIP6key": "MESSy-Consortium"
+    },
+    "Group:MIROC": {
+        "contains": [
+            "03qeabs35",
+            "03r519674",
+            "057zh3y96",
+            "059qg2m13"
+        ],
+        "CMIP6key": "MIROC"
+    },
+    "Group:NCC": {
+        "contains": [
+            "001n36p86",
+            "00q7d9z06",
+            "016tr2j79",
+            "01gw5dy53",
+            "01xtthb56",
+            "03zga2b32",
+            "NERSC(Bergen)"
+        ],
+        "CMIP6key": "NCC"
+    },
+    "Group:NIMS-KMA": {
+        "contains": [
+            "04m2hj141",
+            "04nrmrg07"
+        ],
+        "CMIP6key": "NIMS-KMA"
+    },
+    "Group:NOAA-GFDL": {
+        "contains": [
+            "02z5nhe81",
+            "03vmn1898"
+        ],
+        "CMIP6key": "NOAA-GFDL"
+    },
+    "Group:PCMDI": {
+        "contains": [
+            "041nk4h53",
+            "PCMDI"
+        ],
+        "CMIP6key": "PCMDI"
+    },
+    "Group:RTE-RRTMGP-Consortium": {
+        "contains": [
+            "02ttsq026",
+            "04cg70g73"
+        ],
+        "CMIP6key": "RTE-RRTMGP-Consortium"
+    },
+    "Group:RUBISCO": {
+        "contains": [
+            "00jmfr291",
+            "01e41cf67",
+            "01qz5mb56",
+            "0272j5188",
+            "02ex6cf31",
+            "02jbv0t02",
+            "04gyf1771",
+            "05cvfcr44",
+            "05gvnxz63"
+        ],
+        "CMIP6key": "RUBISCO"
+    }
+}

@@ -1,0 +1,150 @@
+{
+    "04cg70g73": {
+        "CMIP6key": "AER"
+    },
+    "050qpg053": {
+        "CMIP6key": "AS-RCEC"
+    },
+    "032e6b942": {
+        "CMIP6key": "AWI"
+    },
+    "BCC": {
+        "CMIP6key": "BCC"
+    },
+    "034b53w38": {
+        "CMIP6key": "CAMS"
+    },
+    "034t30j35": {
+        "CMIP6key": "CAS"
+    },
+    "03jf2m686": {
+        "CMIP6key": "CCCR-IITM"
+    },
+    "026ny0e17": {
+        "CMIP6key": "CCCma"
+    },
+    "01tf11a61": {
+        "CMIP6key": "CMCC"
+    },
+    "004rej139+02dzbc556": {
+        "CMIP6key": "CNRM-CERFACS"
+    },
+    "03qn8fb07": {
+        "CMIP6key": "CSIRO"
+    },
+    "03qn8fb07+02dzbc556": {
+        "CMIP6key": "CSIRO-ARCCSS"
+    },
+    "03qn8fb07+COSIMA": {
+        "CMIP6key": "CSIRO-COSIMA"
+    },
+    "03ztgj037": {
+        "CMIP6key": "DKRZ"
+    },
+    "02nrqs528": {
+        "CMIP6key": "DWD"
+    },
+    "041nk4h53+05gvnxz63+02ex6cf31+01e41cf67+02jbv0t02+01qz5mb56+05h992307+01apwpt12+058m7ey48": {
+        "CMIP6key": "E3SM-Project"
+    },
+    "04kxf1r09+05sd8tv96+00n8ttd98+020m6x732+02khqd465+05hppb561+000jewp25+04te6a418+009gyvm78+046ggxs83+IMAU(NETHERLANDS)+01sp7nd78+04t3en479+05dfgh554+012a77v79+00vhgwv19+00rbjv475+04fzjj956+052gg0110+00hgzve81+01k0v6g02+05f0yaq80+Unite_ASTR(Belgium)+05m7pjf47+03zga2b32+035b05819+040af2s02+030eybx10+048a87296+04pp8hn57+008xxew50+04qw24q55": {
+        "CMIP6key": "EC-Earth-Consortium"
+
+    },
+    "014w0fd65": {
+        "CMIP6key": "ECMWF"
+    },
+    "01y34t753+026sv7t11": {
+        "CMIP6key": "FIO-QLNM"
+    },
+    "05a28rw58+05esem239+02nv7yv05+052gg0110+05hppb561+03a5xsc56+05a28rw58": {
+        "CMIP6key": "HAMMOZ-Consortium"
+    },
+    "00520ey40": {
+        "CMIP6key": "INM"
+    },
+    "02haar591": {
+        "CMIP6key": "IPSL"
+    },
+    "032m55064": {
+        "CMIP6key": "KIOST"
+    },
+    "041nk4h53": {
+        "CMIP6key": "LLNL"
+    },
+    "04bwf3e34+03ztgj037+05558nw16+03e21z229+04xx4z452+02hw5fp67": {
+        "CMIP6key": "MESSy-Consortium"
+    },
+    "059qg2m13+03qeabs35+057zh3y96+03r519674": {
+        "CMIP6key": "MIROC"
+    },
+    "01ch2yn61": {
+        "CMIP6key": "MOHC"
+    },
+    "05esem239": {
+        "CMIP6key": "MPI-M"
+    },
+    "MRI(Tsukuba,Ibaraki)": {
+        "CMIP6key": "MRI"
+    },
+    "01cyfxe35": {
+        "CMIP6key": "NASA-GISS"
+    },
+    "0171mag52": {
+        "CMIP6key": "NASA-GSFC"
+    },
+    "05cvfcr44": {
+        "CMIP6key": "NCAR"
+    },
+    "01gw5dy53+001n36p86+NERSC(Bergen)+00q7d9z06+03zga2b32+01xtthb56+016tr2j79": {
+        "CMIP6key": "NCC"
+    },
+    "02b5d8509": {
+        "CMIP6key": "NERC"
+    },
+    "04m2hj141+04nrmrg07": {
+        "CMIP6key": "NIMS-KMA"
+    },
+    "04hxcaz34": {
+        "CMIP6key": "NIWA"
+    },
+    "02z5nhe81+03vmn1898": {
+        "CMIP6key": "NOAA-GFDL"
+    },
+    "05bqach95": {
+        "CMIP6key": "NTU"
+    },
+    "01rxvg760": {
+        "CMIP6key": "NUIST"
+    },
+    "PCMDI+041nk4h53": {
+        "CMIP6key": "PCMDI"
+    },
+    "05h992307": {
+        "CMIP6key": "PNNL-WACCEM"
+    },
+    "04cg70g73+02ttsq026": {
+        "CMIP6key": "RTE-RRTMGP-Consortium"
+    },
+    "01qz5mb56+05gvnxz63+02ex6cf31+01e41cf67+02jbv0t02+0272j5188+05cvfcr44+04gyf1771+00jmfr291": {
+        "CMIP6key": "RUBISCO"
+    },
+    "04h9pn542": {
+        "CMIP6key": "SNU"
+    },
+    "03cve4549": {
+        "CMIP6key": "THU"
+    },
+    "03m2x1q45": {
+        "CMIP6key": "UA"
+    },
+    "04gyf1771": {
+        "CMIP6key": "UCI"
+    },
+    "02t274463": {
+        "CMIP6key": "UCSB"
+    },
+    "00g30e956": {
+        "CMIP6key": "UHH"
+    }
+}

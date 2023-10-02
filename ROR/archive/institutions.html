@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>World Map</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include D3.js library -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://unpkg.com/topojson@3"></script>
+    <style>
+        svg {
+            width: 100vw;
+            height: 100vh;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <svg id="map"></svg>
+
+    <script>
+        // Create a SVG element for the map
+        var svg = d3.select("#map");
+
+        // Define the projection for the map
+        var projection = d3.geoMercator()
+            .center([0, 0])
+            .translate([svg.node().clientWidth / 2, svg.node().clientHeight / 2*1.2])
+            .scale(180)
+            .center([0, 0])
+
+        // Create a path generator
+        var path = d3.geoPath()
+            .projection(projection);
+
+        // Load the world map data in TopoJSON format
+        d3.json("https://unpkg.com/world-atlas/countries-50m.json").then(function (data) {
+            // Convert TopoJSON to GeoJSON
+            var countries = topojson.feature(data, data.objects.countries);
+
+            // Draw the world map
+            svg.selectAll("path")
+                .data(countries.features)
+                .enter().append("path")
+                .attr("d", path)
+                .attr("fill", "lightgray")
+                .attr("stroke", "white");
+
+            // Array of latitude and longitude points
+            var points = [{"established": 2012, "name": "GEOMAR Technologie (Germany)", "lng_lat": [10.148017, 54.330044], "link": null}, {"established": 1866, "name": "Norwegian Meteorological Institute", "lng_lat": [10.721149, 59.942645], "link": "http://met.no"}, {"established": null, "name": "Centre National de Recherches M\u00e9t\u00e9orologiques", "lng_lat": [1.372572, 43.57524], "link": "http://www.cnrm.meteo.fr/?lang=fr"}, {"established": 1980, "name": "Institute of Numerical Mathematics", "lng_lat": [37.625605, 55.762997], "link": "http://www.inm.ras.ru/inm_en_ver/index.htm"}, {"established": 1880, "name": "Vrije Universiteit Amsterdam", "lng_lat": [4.88969, 52.37403], "link": "https://vu.nl/"}, {"established": 1964, "name": "The Abdus Salam International Centre for Theoretical Physics (ICTP)", "lng_lat": [13.77678, 45.64953], "link": "http://www.ictp.it/"}, {"established": 1919, "name": "Universit\u00e4t Hamburg", "lng_lat": [9.99302, 53.55073], "link": "http://www.uni-hamburg.de"}, {"established": 1971, "name": "Swedish Meteorological and Hydrological Institute", "lng_lat": [16.148073, 58.581426], "link": "http://www.smhi.se/en"}, {"established": 1817, "name": "University of Michigan\u2013Ann Arbor", "lng_lat": [-83.74088, 42.27756], "link": "https://www.umich.edu/"}, {"established": null, "name": "Institute of Atmospheric Sciences and Climate", "lng_lat": [11.338353, 44.52224], "link": "http://www.isac.cnr.it/"}, {"established": 1969, "name": "Norwegian Institute for Air Research", "lng_lat": [11.053102, 59.975494], "link": "http://www.nilu.no/Forsiden/tabid/41/language/en-GB/Default.aspx"}, {"established": 2010, "name": "Netherlands eScience Center", "lng_lat": [4.88969, 52.37403], "link": "https://www.esciencecenter.nl/"}, {"established": 1936, "name": "Met \u00c9ireann", "lng_lat": [-6.269663, 53.375901], "link": "http://www.met.ie/"}, {"established": 1666, "name": "Lund University", "lng_lat": [13.19321, 55.70584], "link": "http://www.lunduniversity.lu.se/"}, {"established": 1975, "name": "European Centre for Medium-Range Weather Forecasts", "lng_lat": [-0.97113, 51.45625], "link": "http://www.ecmwf.int/"}, {"established": 1986, "name": "Uni Research (Norway)", "lng_lat": [5.333241, 60.384377], "link": "http://uni.no/en/"}, {"established": 1959, "name": "Goddard Space Flight Center", "lng_lat": [-76.87553, 39.00455], "link": "https://www.nasa.gov/centers/goddard/home/index.html"}, {"established": 1948, "name": "Sandia National Laboratories", "lng_lat": [-106.65114, 35.08449], "link": "http://www.sandia.gov"}, {"established": 1854, "name": "Met Office", "lng_lat": [-3.52751, 50.7236], "link": "http://www.metoffice.gov.uk/"}, {"established": 1961, "name": "Goddard Institute for Space Studies", "lng_lat": [-74.00597, 40.71427], "link": "http://www.giss.nasa.gov/"}, {"established": 1943, "name": "Los Alamos National Laboratory", "lng_lat": [-106.30697, 35.88808], "link": "http://lanl.gov/"}, {"established": 1990, "name": "CICERO Center for International Climate Research", "lng_lat": [10.715636, 59.942129], "link": "https://cicero.oslo.no/en"}, {"established": 1971, "name": "SURFsara (Netherlands)", "lng_lat": [4.954666, 52.356731], "link": "https://www.surf.nl/en/about-surf/subsidiaries/surfsara/"}, {"established": 1943, "name": "Oak Ridge National Laboratory", "lng_lat": [-84.26964, 36.01036], "link": "http://www.ornl.gov/"}, {"established": 1902, "name": "Nanjing University", "lng_lat": [118.775, 32.056111], "link": "http://www.nju.edu.cn/english/"}, {"established": 1991, "name": "Portuguese Sea and Atmosphere Institute", "lng_lat": [-9.13333, 38.71667], "link": "https://www.ipma.pt/en/oipma/"}, {"established": 2005, "name": "Euro-Mediterranean Center for Climate Change", "lng_lat": [18.086602, 40.33942], "link": "http://www.cmcc.it/"}, {"established": 1811, "name": "University of Oslo", "lng_lat": [10.74609, 59.91273], "link": "http://www.uio.no/english/"}, {"established": 1958, "name": "First Institute of Oceanography", "lng_lat": [120.459333, 36.102233], "link": "http://en.fio.org.cn"}, {"established": 1872, "name": "Danish Meteorological Institute", "lng_lat": [12.561035, 55.715604], "link": "http://ocean.dmi.dk/english/"}, {"established": 1971, "name": "Environment and Climate Change Canada", "lng_lat": [-75.699862, 45.425373], "link": "https://www.canada.ca/en/environment-climate-change.html"}, {"established": 2013, "name": "Qingdao National Laboratory for Marine Science and Technology", "lng_lat": [120.38042, 36.06488], "link": "http://www.qnlm.ac/en/index"}, {"established": 1899, "name": "Northern Arizona University", "lng_lat": [-111.65127, 35.19807], "link": "https://www.nau.edu/"}, {"established": 1965, "name": "Natural Environment Research Council", "lng_lat": [-1.78116, 51.55797], "link": "http://www.nerc.ac.uk/"}, {"established": 1991, "name": "Centre Europ\u00e9en de Recherche et de Formation Avanc\u00e9e en Calcul Scientifique", "lng_lat": [1.371536, 43.576057], "link": "http://www.cerfacs.fr/"}, {"established": 1947, "name": "Brookhaven National Laboratory", "lng_lat": [-72.88677, 40.86954], "link": "http://www.bnl.gov/world/"}, {"established": 1991, "name": "Institut Pierre-Simon Laplace", "lng_lat": [2.332105, 48.855675], "link": "https://www.ipsl.fr/en/"}, {"established": 2001, "name": "National Institute for Environmental Studies", "lng_lat": [140.11853, 36.050418], "link": "https://www.nies.go.jp/"}, {"established": 1931, "name": "Lawrence Berkeley National Laboratory", "lng_lat": [-122.27275, 37.87159], "link": "http://www.lbl.gov/"}, {"established": 1959, "name": "ENEA Casaccia Research Centre", "lng_lat": [12.51133, 41.89193], "link": "https://www.casaccia.enea.it"}, {"established": 1952, "name": "German Meteorological Service", "lng_lat": [8.747606, 50.103322], "link": "http://www.dwd.de/"}, {"established": 1956, "name": "Forschungszentrum J\u00fclich", "lng_lat": [6.36267, 50.92149], "link": "https://www.fz-juelich.de"}, {"established": 1891, "name": "University of California, Santa Barbara", "lng_lat": [-119.69819, 34.42083], "link": "http://www.ucsb.edu/"}, {"established": 1876, "name": "University of Colorado Boulder", "lng_lat": [-105.27055, 40.01499], "link": "http://www.colorado.edu/"}, {"established": 1807, "name": "National Oceanic and Atmospheric Administration", "lng_lat": [-77.03637, 38.89511], "link": "http://www.noaa.gov/"}, {"established": 1495, "name": "University of Santiago de Compostela", "lng_lat": [-8.54569, 42.88052], "link": "http://www.usc.es/"}, {"established": 1980, "name": "Alfred Wegener Institute for Polar and Marine Research", "lng_lat": [8.580858, 53.533286], "link": "http://www.awi.de/en/home/"}, {"established": 1973, "name": "Korea Institute of Ocean Science and Technology", "lng_lat": [129.03004, 35.10168], "link": "http://eng.kiost.ac/"}, {"established": 1978, "name": "Chinese Academy of Meteorological Sciences", "lng_lat": [116.39723, 39.9075], "link": "http://www.camscma.cn/en.html"}, {"established": 1949, "name": "Chinese Academy of Sciences", "lng_lat": [116.39723, 39.9075], "link": "http://english.cas.cn/"}, {"established": 1479, "name": "University of Copenhagen", "lng_lat": [12.56553, 55.67594], "link": "http://www.ku.dk/english/"}, {"established": 1992, "name": "Leibniz Institute for Tropospheric Research", "lng_lat": [12.37129, 51.33962], "link": "https://www.tropos.de/en/"}, {"established": 1911, "name": "Tsinghua University", "lng_lat": [116.325414, 39.999585], "link": "http://www.tsinghua.edu.cn/publish/newthuen/"}, {"established": 1960, "name": "Max Planck Computing and Data Facility", "lng_lat": [11.673612, 48.262967], "link": "http://www.mpcdf.mpg.de/"}, {"established": 1962, "name": "Indian Institute of Tropical Meteorology", "lng_lat": [73.85535, 18.51957], "link": "http://www.tropmet.res.in/"}, {"established": 1885, "name": "University of Arizona", "lng_lat": [-110.92648, 32.22174], "link": "http://www.arizona.edu/"}, {"established": 1930, "name": "Anderson Orthopaedic Research Institute", "lng_lat": [-77.078421, 38.740507], "link": "http://www.aori.org/"}, {"established": 1926, "name": "Commonwealth Scientific and Industrial Research Organisation", "lng_lat": [149.12807, -35.28346], "link": "http://www.csiro.au/"}, {"established": 2010, "name": "RIKEN Center for Computational Science", "lng_lat": [135.183, 34.6913], "link": "https://www.r-ccs.riken.jp/jp/"}, {"established": 1955, "name": "Geophysical Fluid Dynamics Laboratory", "lng_lat": [-74.616235, 40.345398], "link": "https://www.gfdl.noaa.gov/"}, {"established": 1946, "name": "University of Bergen", "lng_lat": [5.32415, 60.39299], "link": "http://www.uib.no/"}, {"established": 1987, "name": "German Climate Computing Centre", "lng_lat": [9.99302, 53.55073], "link": "https://www.dkrz.de/"}, {"established": 1640, "name": "University of Helsinki", "lng_lat": [24.93545, 60.16952], "link": "https://www.helsinki.fi/"}, {"established": 1952, "name": "Lawrence Livermore National Laboratory", "lng_lat": [-121.717146, 37.689253], "link": "https://www.llnl.gov/"}, {"established": null, "name": "Instituto Dom Luiz", "lng_lat": [-9.13333, 38.71667], "link": "http://idl.campus.ciencias.ulisboa.pt"}, {"established": 1477, "name": "Uppsala University", "lng_lat": [17.63889, 59.85882], "link": "https://www.uu.se/en/"}, {"established": 1969, "name": "German Aerospace Center", "lng_lat": [7.119569, 50.855068], "link": "http://www.dlr.de/dlr/en/desktopdefault.aspx/tabid-10002/"}, {"established": 1977, "name": "Atmospheric and Environmental Research", "lng_lat": [-71.256946, 42.539472], "link": "http://www.aer.com/"}, {"established": 2003, "name": "NTNU Technology Transfer (Norway)", "lng_lat": [10.40337, 63.416625], "link": "http://tto.ntnu.no/en"}, {"established": 1965, "name": "University of California, Irvine", "lng_lat": [-117.842642, 33.64535], "link": "http://uci.edu/"}, {"established": 1946, "name": "Seoul National University", "lng_lat": [126.951894, 37.460155], "link": "http://www.snu.ac.kr/index.html"}, {"established": 1992, "name": "National Institute of Water and Atmospheric Research", "lng_lat": [174.76172, -36.84403], "link": "https://www.niwa.co.nz/"}, {"established": 1887, "name": "Agencia Estatal de Meteorolog\u00eda", "lng_lat": [-3.70256, 40.4165], "link": "http://www.aemet.es/en/portada"}, {"established": 1978, "name": "National Institute of Meteorological Sciences", "lng_lat": [126.56181, 33.25333], "link": "http://www.nimr.go.kr/AE/MA/main.jsp"}, {"established": 1904, "name": "Korea Meteorological Administration", "lng_lat": [126.91704, 37.49371], "link": "http://web.kma.go.kr/eng/index.jsp"}, {"established": 1636, "name": "Utrecht University", "lng_lat": [5.12222, 52.09083], "link": "http://www.uu.nl/en"}, {"established": 1918, "name": "Wageningen University & Research", "lng_lat": [5.665749, 51.984754], "link": "https://www.wur.nl/"}, {"established": 2009, "name": "Karlsruhe Institute of Technology", "lng_lat": [8.40444, 49.00937], "link": "http://www.kit.edu/english/"}, {"established": 2005, "name": "Irish Centre for High-End Computing", "lng_lat": [-6.24889, 53.33306], "link": "https://www.ichec.ie/"}, {"established": 1961, "name": "Johnson Space Center", "lng_lat": [-95.091, 29.563], "link": "http://www.nasa.gov/centers/johnson/home/index.html"}, {"established": null, "name": "Research Center for Environmental Changes, Academia Sinica", "lng_lat": [121.614171, 25.040712], "link": "http://www.rcec.sinica.edu.tw/"}, {"established": 1096, "name": "University of Oxford", "lng_lat": [-1.25596, 51.75222], "link": "http://www.ox.ac.uk/"}, {"established": 1962, "name": "Leibniz Supercomputing Centre", "lng_lat": [11.65101, 48.24896], "link": "https://www.lrz.de/"}, {"established": 1877, "name": "The University of Tokyo", "lng_lat": [139.69171, 35.6895], "link": "http://www.u-tokyo.ac.jp/en/"}, {"established": 1956, "name": "Sandia National Laboratories California", "lng_lat": [-121.76801, 37.68187], "link": "http://www.sandia.gov/locations/livermore_california.html"}, {"established": 1971, "name": "Japan Agency for Marine-Earth Science and Technology", "lng_lat": [139.649659, 35.320936], "link": "http://www.jamstec.go.jp/e/"}, {"established": 1855, "name": "ETH Zurich", "lng_lat": [8.55, 47.36667], "link": "https://ethz.ch"}, {"established": 1928, "name": "National Taiwan University", "lng_lat": [121.536, 25.016], "link": "http://www.ntu.edu.tw/english/"}, {"established": 1930, "name": "National Center for Atmospheric Research", "lng_lat": [-105.27055, 40.01499], "link": "https://ncar.ucar.edu/"}, {"established": 1854, "name": "Royal Netherlands Meteorological Institute", "lng_lat": [5.18056, 52.11], "link": "http://www.knmi.nl/over-het-knmi/about"}, {"established": 1975, "name": "Max Planck Institute for Meteorology", "lng_lat": [9.975468, 53.567794], "link": "http://www.mpimet.mpg.de/en/home.html"}, {"established": 1878, "name": "Stockholm University", "lng_lat": [18.06871, 59.32938], "link": "http://www.su.se/english/"}, {"established": 1946, "name": "Argonne National Laboratory", "lng_lat": [-88.00173, 41.67364], "link": "http://www.anl.gov/"}, {"established": 1965, "name": "Pacific Northwest National Laboratory", "lng_lat": [-119.28446, 46.28569], "link": "http://www.pnnl.gov/"}, {"established": 1838, "name": "Finnish Meteorological Institute", "lng_lat": [24.960991, 60.203803], "link": "http://en.ilmatieteenlaitos.fi/"}, {"established": 1854, "name": "University College Dublin", "lng_lat": [-6.222682, 53.307211], "link": "http://www.ucd.ie/"}, {"established": 2005, "name": "Barcelona Supercomputing Center", "lng_lat": [2.116325, 41.389319], "link": "https://www.bsc.es/"}];
+
+      
+            // Scale for the established dates
+            var establishedScale = d3.scaleLinear()
+                .domain([d3.max(points, function(d) { return d.established; }),1])
+                // .range([2, 8]); // Adjust the range as needed
+
+
+            // Plot the points on the map
+            svg.selectAll(".point")
+                .data(points)
+                .enter().append("circle")
+                .attr("class", "point")
+                .attr("cx", function (d) { return projection(d.lng_lat)[0]; })
+                .attr("cy", function (d) { return projection(d.lng_lat)[1]; })
+                .attr("r", function(d) { return 2 + 5*establishedScale(d.established||2022) })
+                .attr("fill", "steelblue")
+                .on("mouseover", function(e) {
+                    var d = e.srcElement.__data__
+                    d3.select(this)
+                        .transition()
+                        .duration(200)
+                        .attr("r",  6 + 15*establishedScale(d.established||2022)) // Increase the size
+                        .attr("fill", "coral") // Change the color
+                        .attr("opacity", 0.8) // Adjust the opacity if desired
+                        .attr("stroke", "white"); // Add a stroke if desired
+                })
+                .on("mouseout", function(e) {
+                    console.log(e,e.srcElement.__data__)
+                    var d = e.srcElement.__data__
+                    d3.select(this)
+                        .transition()
+                        .duration(200)
+                        .attr("r", 2 + 5*establishedScale(d.established||2022)) // Revert to the original size
+                        .attr("fill", "steelblue") // Revert to the original color
+                        .attr("opacity", 1) // Revert to the original opacity
+                        .attr("stroke", null); // Remove the stroke
+                })
+                .on("click", function(d) {
+                console.log(d.srcElement.__data__)
+                    if (d.srcElement.__data__.link) {
+                        window.open(d.srcElement.__data__.link, "_blank"); // Open the link in a new window/tab
+                    }
+                })
+                .attr("title", function(d) { return d.name; }) // Set the tooltip text using the 'title' attribute
+                .append("svg:title") // Required for some browsers to display the tooltip
+                .text(function(d) { return d.name; })
+                
+        });
+    </script>
+</body>
+</html>
+
