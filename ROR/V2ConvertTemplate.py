@@ -203,10 +203,11 @@ def main():
 
     # Write the JSON data to the output file
     json.dump(institutions, open(OUTPUT_FILE, 'w'), indent=4)
-    json.dump(cohorts, open(OUTPUT_FILE.replace('institutions','cohots'), 'w'), indent=4)
+    json.dump(cohorts, open(OUTPUT_FILE.replace('institutions','cohorts'), 'w'), indent=4)
 
     with open('faillog.txt','w') as f:
         f.write('\n'.join(fail))
+        f.write('\n'.join(missing))
 
 
 
