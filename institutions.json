@@ -74,6 +74,7 @@
             ]
         }
     },
+    "BCC": false,
     "CAMS": {
         "indentifiers": {
             "institution_name": "Chinese Academy of Meteorological Sciences",
@@ -199,12 +200,6 @@
             ]
         }
     },
-    "CNRM-CERFACS": {
-        "contains": [
-            "004rej139",
-            "02dzbc556"
-        ]
-    },
     "CSIRO": {
         "indentifiers": {
             "institution_name": "Commonwealth Scientific and Industrial Research Organisation",
@@ -230,117 +225,8 @@
             ]
         }
     },
-    "CSIRO-ARCCSS": {
-        "contains": [
-            "02dzbc556",
-            "03qn8fb07"
-        ]
-    },
-    "CSIRO-COSIMA": {
-        "contains": [
-            "03qn8fb07",
-            "COSIMA"
-        ]
-    },
-    "DKRZ": {
-        "indentifiers": {
-            "institution_name": "German Climate Computing Centre",
-            "aliases": [],
-            "acronyms": [
-                "DKRZ"
-            ],
-            "labels": [],
-            "ror": "03ztgj037",
-            "url": [
-                "https://www.dkrz.de/"
-            ],
-            "established": 1987,
-            "type": "Facility"
-        },
-        "location": {
-            "lat": 53.55073,
-            "lon": 9.99302,
-            "city": "Hamburg",
-            "country": [
-                "Germany",
-                "DE"
-            ]
-        }
-    },
-    "DWD": {
-        "indentifiers": {
-            "institution_name": "German Meteorological Service",
-            "aliases": [],
-            "acronyms": [
-                "DWD"
-            ],
-            "labels": [],
-            "ror": "02nrqs528",
-            "url": [
-                "http://www.dwd.de/"
-            ],
-            "established": 1952,
-            "type": "Facility"
-        },
-        "location": {
-            "lat": 50.103322,
-            "lon": 8.747606,
-            "city": "Offenbach",
-            "country": [
-                "Germany",
-                "DE"
-            ]
-        }
-    },
-    "E3SM-Project": {
-        "contains": [
-            "01apwpt12",
-            "01e41cf67",
-            "01qz5mb56",
-            "02ex6cf31",
-            "02jbv0t02",
-            "041nk4h53",
-            "058m7ey48",
-            "05gvnxz63",
-            "05h992307"
-        ]
-    },
-    "EC-Earth-Consortium": {
-        "contains": [
-            "000jewp25",
-            "008xxew50",
-            "009gyvm78",
-            "00hgzve81",
-            "00n8ttd98",
-            "00rbjv475",
-            "00vhgwv19",
-            "012a77v79",
-            "01k0v6g02",
-            "01sp7nd78",
-            "020m6x732",
-            "02khqd465",
-            "030eybx10",
-            "035b05819",
-            "03zga2b32",
-            "040af2s02",
-            "046ggxs83",
-            "048a87296",
-            "04fzjj956",
-            "04kxf1r09",
-            "04pp8hn57",
-            "04qw24q55",
-            "04t3en479",
-            "04te6a418",
-            "052gg0110",
-            "05dfgh554",
-            "05f0yaq80",
-            "05hppb561",
-            "05m7pjf47",
-            "05sd8tv96",
-            "IMAU(NETHERLANDS)",
-            "Unite_ASTR(Belgium)"
-        ]
-    },
+    "DKRZ": false,
+    "DWD": false,
     "ECMWF": {
         "indentifiers": {
             "institution_name": "European Centre for Medium-Range Weather Forecasts",
@@ -365,23 +251,6 @@
                 "GB"
             ]
         }
-    },
-    "FIO-QLNM": {
-        "contains": [
-            "01y34t753",
-            "026sv7t11"
-        ]
-    },
-    "HAMMOZ-Consortium": {
-        "contains": [
-            "02nv7yv05",
-            "03a5xsc56",
-            "052gg0110",
-            "05a28rw58",
-            "05a28rw58",
-            "05esem239",
-            "05hppb561"
-        ]
     },
     "INM": {
         "indentifiers": {
@@ -463,7 +332,12 @@
     "LLNL": {
         "indentifiers": {
             "institution_name": "Lawrence Livermore National Laboratory",
-            "aliases": [],
+            "aliases": [
+                "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory",
+                "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
+                "United States Department of Energy Los Alamos National Laboratory",
+                "U.S. Department of Energy Los Alamos National Laboratory"
+            ],
             "acronyms": [
                 "LLNL",
                 "LLL"
@@ -477,32 +351,14 @@
             "type": "Facility"
         },
         "location": {
-            "lat": 37.689253,
-            "lon": -121.717146,
+            "lat": 37.68187,
+            "lon": -121.76801,
             "city": "Livermore",
             "country": [
                 "United States",
                 "US"
             ]
         }
-    },
-    "MESSy-Consortium": {
-        "contains": [
-            "02hw5fp67",
-            "03e21z229",
-            "03ztgj037",
-            "04bwf3e34",
-            "04xx4z452",
-            "05558nw16"
-        ]
-    },
-    "MIROC": {
-        "contains": [
-            "03qeabs35",
-            "03r519674",
-            "057zh3y96",
-            "059qg2m13"
-        ]
     },
     "MOHC": {
         "indentifiers": {
@@ -554,6 +410,7 @@
             ]
         }
     },
+    "MRI": false,
     "NASA-GISS": {
         "indentifiers": {
             "institution_name": "Goddard Institute for Space Studies",
@@ -629,17 +486,6 @@
             ]
         }
     },
-    "NCC": {
-        "contains": [
-            "001n36p86",
-            "00q7d9z06",
-            "016tr2j79",
-            "01gw5dy53",
-            "01xtthb56",
-            "03zga2b32",
-            "NERSC(Bergen)"
-        ]
-    },
     "NERC": {
         "indentifiers": {
             "institution_name": "Natural Environment Research Council",
@@ -664,12 +510,6 @@
                 "GB"
             ]
         }
-    },
-    "NIMS-KMA": {
-        "contains": [
-            "04m2hj141",
-            "04nrmrg07"
-        ]
     },
     "NIWA": {
         "indentifiers": {
@@ -697,12 +537,6 @@
                 "NZ"
             ]
         }
-    },
-    "NOAA-GFDL": {
-        "contains": [
-            "02z5nhe81",
-            "03vmn1898"
-        ]
     },
     "NTU": {
         "indentifiers": {
@@ -757,12 +591,6 @@
             ]
         }
     },
-    "PCMDI": {
-        "contains": [
-            "041nk4h53",
-            "PCMDI"
-        ]
-    },
     "PNNL-WACCEM": {
         "indentifiers": {
             "institution_name": "Pacific Northwest National Laboratory",
@@ -787,25 +615,6 @@
                 "US"
             ]
         }
-    },
-    "RTE-RRTMGP-Consortium": {
-        "contains": [
-            "02ttsq026",
-            "04cg70g73"
-        ]
-    },
-    "RUBISCO": {
-        "contains": [
-            "00jmfr291",
-            "01e41cf67",
-            "01qz5mb56",
-            "0272j5188",
-            "02ex6cf31",
-            "02jbv0t02",
-            "04gyf1771",
-            "05cvfcr44",
-            "05gvnxz63"
-        ]
     },
     "SNU": {
         "indentifiers": {
