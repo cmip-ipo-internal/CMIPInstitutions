@@ -1,2 +1,7 @@
-Error: 404 - {"errors":["'BCC' is not a valid ROR ID"]}
 Error: 404 - {"errors":["'MRI(Tsukuba,Ibaraki)' is not a valid ROR ID"]}
+Error: 404 - {"errors":["'CNRM%20(Centre%20National%20de%20Recherches%20Meteorologiques,%20Toulouse%2031057,%20France),%20CERFACS%20(Centre%20Europeen%20de%20Recherche%20et%20de%20Formation%20Avancee%20en%20Calcul%20Scientifique,%20Toulouse%2031100,%20France)' is not a valid ROR ID"]}
+Error: 404 - {"errors":["'Integrated%20Assessment%20Modeling%20Consortium%20(see%20www.globalchange.umd.edu/iamc/membership%20for%20complete%20membership).%20Mailing%20address:%20International%20Institute%20for%20Applied%20Systems%20Analysis%20(IIASA),%20Schlossplatz%201,%20A-2361%20Laxenburg,%20Austria' is not a valid ROR ID"]}
+Error: 404 - {"errors":["'Deutsches%20Zentrum%20fur%20Luft-%20und%20Raumfahrt,%20Royal%20Belgian%20Institute%20for%20Space%20Aeronomy' is not a valid ROR ID"]}
+Error: 404 - {"errors":["'Ensemble%20de%20Services%20Pour%20la%20Recherche,%20Institut%20Pierre%20Simon%20Laplace%20(France)' is not a valid ROR ID"]}
+Error: 404 - {"errors":["'Joint%20research%20colloboration%20between%20INCOIS(India),%20NIO(India)%20and%20IPSL(France)' is not a valid ROR ID"]}
+Error: 404 - {"errors":["'University%20of%20California,%20San%20Diego,%20Scripps%20Institution%20of%20Oceanography' is not a valid ROR ID"]}

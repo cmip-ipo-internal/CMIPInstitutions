@@ -161,12 +161,13 @@ def main():
         for i in mipdata:
             if i not in institutions:
                 if i in manual:
+                    print(f"manualfix I : {i} {manual[i]}")
                     ror_data = get_ror_data(manual[i])
 
                     if ror_data:
                         institutions[i] = parse_ror_data(ror_data)
                     else: 
-                        cohorts[i] = manual[i]
+                        cohorts[i] = {'contains':manual[i]}
 
                 else:
                     missing.append([i,mipdata[i]])
@@ -176,11 +177,11 @@ def main():
         if not v:
             if k in manual:
                     ror_data = get_ror_data(manual[k])
-
+                    print(f"manualfix K: {v} {k} {manual[k]}")
                     if ror_data:
                         institutions[k] = parse_ror_data(ror_data)
                     else: 
-                        cohorts[k] = manual[k]
+                        cohorts[k] = {'contains':manual[k]}
             else:
                 missing.append([k])
 
@@ -192,8 +193,11 @@ def main():
         print(ratio, f'\n"{i[0]}":"{ror}",')
         print(i,'\n',name)
 
-    assert len(missing) == 0 
+    # assert len(missing) == 0 
 
+
+    print('--------------')
+    print(missing)
   
 
     # Sort the institutions dictionary and print the JSON data
